@@ -1,0 +1,197 @@
+:root {
+     --red: hsl(0, 78%, 62%);
+     --cyan: hsl(180, 62%, 55%);
+     --orange: hsl(34, 97%, 64%);
+     --blue: hsl(212, 86%, 64%);
+     --dkblue: hsl(234, 12%, 34%);
+     --grblue: hsl(229, 6%, 66%);
+     --ltgrey: hsl(0, 0%, 98%);
+     font-size: 15px;
+}
+
+@font-face {
+     font-family: "poppins";
+     src: url(../font/Poppins-Light.ttf);
+}
+
+@font-face {
+     font-family: "bigpoppins";
+     src: url(../font/Poppins-Regular.ttf);
+}
+
+body {
+     font-family: "poppins", sans-serif;
+     padding: 0;
+     box-sizing: border-box;
+     margin: 0 2rem 0 2rem;
+     background-color: var(--ltgrey);
+
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 3rem;
+}
+
+h4 {
+     margin: 0;
+     font-weight: 900;
+     color: var(--dkblue);
+}
+
+.title h3 {
+     text-align: center;
+     margin: 0;
+     font-size: 1.5rem;
+     color: var(--grblue);
+     font-weight: 100;
+}
+
+.title h4 {
+     text-align: center;
+     font-size: 1.5rem;
+}
+
+.title p {
+     text-align: center;
+     color: var(--grblue);
+     line-height: 1.5rem;
+}
+
+.title br {
+     display: none;
+}
+
+.card {
+     position: relative;
+
+}
+
+.card img {
+     width: 15%;
+     position: absolute;
+     display: block;
+     right: 2rem;
+     margin-top: 2rem;
+}
+
+.card h4 {
+     font-size: 1.1rem;
+     margin: 1rem 2rem 1rem 2rem;
+}
+
+.card p {
+     font-size: .8rem;
+     margin: 0 2rem 0 2rem;
+     color: var(--grblue);
+}
+
+.supervisor,
+.karma,
+.calculator,
+.team {
+     min-height: 14rem;
+     margin-bottom: 1.5rem;
+     box-shadow: 0px 7px 14px -5px rgba(0, 0, 0, .3);
+     border-radius: .3rem;
+}
+
+
+
+.supervisor {
+     margin-top: 3rem;
+     border-top: .3rem solid var(--cyan);
+}
+
+.team {
+     border-top: .3rem solid var(--red);
+}
+
+.karma {
+     border-top: .3rem solid var(--orange);
+}
+
+.calculator {
+     border-top: .3rem solid var(--blue);
+}
+
+.attribution {
+     font-size: .6rem;
+     text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+
+     html {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+     body {
+          max-width: 1440px;
+     }
+
+     .title {
+          margin-top: 2.2rem;
+     }
+
+     .title br {
+          display: unset;
+     }
+
+     .title h3,
+     .title h4 {
+          font-size: 2.3rem;
+     }
+
+     .title h4 {
+          font-family: "bigpoppins";
+          font-weight: 900;
+     }
+
+     .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+
+
+          position: relative;
+          margin-top: 3rem;
+     }
+
+     .card img {
+          width: 20%;
+     }
+
+     .cardrow {
+          margin: 0 2rem 0 2rem;
+     }
+
+     .supervisor,
+     .karma,
+     .team,
+     .calculator {
+          flex: 1;
+          width: 23rem;
+          position: relative;
+          min-height: 16.2rem;
+     }
+
+     .card h4 {
+          font-size: 1.3rem;
+          font-weight: 900;
+          font-family: "bigpoppins";
+     }
+
+     .card p {
+          font-size: .9rem;
+     }
+
+}
